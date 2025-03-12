@@ -4,33 +4,89 @@ body{
 }
 
 header{
-    background: linear-gradient(to right, #ea0b0b 34%, #0c9362 66%);    
+    background-color: powderblue;
 }
 
 nav{
-    background: linear-gradient(to right, #ea0b0b 34%, #0c9362 66%);    
+    background-color: powderblue;
+    display: inline-block;
+    width: 80%;    
 }
 
 main{
-    background: linear-gradient(to right, #ea0b0b 34%, #0c9362 66%);    
+    background-color: yellow; 
     font-size: 125%;
+    overflow:scroll;
 }
 
 footer{
-    background: linear-gradient(to right, #ea0b0b 34%, #0c9362 66%);    
+    background-color: powderblue;    
 }
 
-li{
+/*li{
     display: flexbox;
     width:fit-content;
-}
+}*/
 
 h1{
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: powderblue;
 }
 
 p{
     line-height: 30px;
+}
+
+a[href^='#']
+{
+    display: inline-block;
+    padding: 10px;
+    background: gray;
+    color: blue;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+}
+a[href^='#']:hover
+{
+    color:white
+}
+
+nav img{
+    width: 10%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:40% 40%;
+    gap:5%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.grid img{
+    width: 100%
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.Image1{
+    width: 90px;
+    margin-left: 80%;
 }
